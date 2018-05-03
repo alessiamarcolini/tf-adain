@@ -30,6 +30,11 @@ _VGG19 = [
 
 
 _DECODER = [
+    ('conv', 'conv5_1',         {'filters': 512}),
+    ('upsample', 'upsample4',   {}),
+    ('conv', 'conv4_4',         {'filters': 512}),
+    ('conv', 'conv4_3',         {'filters': 512}),
+    ('conv', 'conv4_2',         {'filters': 512}),
     ('conv', 'conv4_1',         {'filters': 256}),
     ('upsample', 'upsample3',   {}),
     ('conv', 'conv3_4',         {'filters': 256}),
