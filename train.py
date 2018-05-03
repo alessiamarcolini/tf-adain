@@ -14,7 +14,7 @@ from adain.weights import open_weights
 
 def train(
         content_dir='datasets/coco',
-        style_dir='datasets/wikiart',
+        style_dir='datasets/nature',
         checkpoint_dir='checkpoints',
         decoder_activation='relu',
         initial_size=512,
