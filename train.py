@@ -24,7 +24,7 @@ def train(
         learning_rate=1e-4,
         learning_rate_decay=5e-5,
         momentum=0.9,
-        batch_size=8,
+        batch_size=2,
         num_epochs=16,
         content_layer='conv4_1',
         style_layers='conv1_1,conv2_1,conv3_1,conv4_1',
