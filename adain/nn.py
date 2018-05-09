@@ -28,13 +28,7 @@ _VGG19 = [
     ('pool', 'pool5',   {})
 ]
 
-
 _DECODER = [
-    ('conv', 'conv5_1',         {'filters': 512}),
-    ('upsample', 'upsample4',   {}),
-    ('conv', 'conv4_4',         {'filters': 512}),
-    ('conv', 'conv4_3',         {'filters': 512}),
-    ('conv', 'conv4_2',         {'filters': 512}),
     ('conv', 'conv4_1',         {'filters': 256}),
     ('upsample', 'upsample3',   {}),
     ('conv', 'conv3_4',         {'filters': 256}),
@@ -48,7 +42,6 @@ _DECODER = [
     ('conv', 'conv1_2',         {'filters': 64}),
     ('conv', 'conv1_1',         {'filters': 3})
 ]
-
 
 def build_vgg(inputs, weights,
         last_layer='conv4_1',
