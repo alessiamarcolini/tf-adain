@@ -2,7 +2,7 @@ from scipy.misc import imread, imresize, imsave
 import numpy as np
 
 
-def load_image(filename, size, crop):
+def load_image(filename, size, crop=False):
     image = imread(filename, mode='RGB')
     if crop:
         image = central_crop(image)
